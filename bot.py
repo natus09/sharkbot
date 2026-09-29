@@ -6,6 +6,8 @@ import re
 
 from datetime import timedelta
 
+import os
+
 intents = discord.Intents.default()
 
 intents.message_content = True
@@ -348,4 +350,5 @@ def parse_duration(duration: str):
 
 # Coloca seu token aqui
 
-bot.run("MTU1NDMyMjUzNjQ1ODc1NjE4OA.GF-0ro.EwgvqUw3FHg4EyCmudr1l6avJfcxgtOun_UY9Y")
+
+bot.run(os.getenv("TOKEN"))
